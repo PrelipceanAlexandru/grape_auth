@@ -1,6 +1,0 @@
-USERNAME: "root"
-PASSWORD: "alex"
-
-DATABASE: "grape_dev"
-TEST_DATABASE: "grape_test"
-PROD_DATABASE: "grape_prod"
