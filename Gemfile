@@ -67,3 +67,6 @@ gem 'mysql2'
 gem 'grape'
 gem 'grape-swagger'
 gem 'grape-swagger-rails'
+
+# Authenticate gem
+gem 'devise_token_auth'
