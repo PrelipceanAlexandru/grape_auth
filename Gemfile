@@ -70,3 +70,5 @@ gem 'grape-swagger-rails'
 
 # Authenticate gem
 gem 'devise_token_auth'
+gem 'grape_devise_token_auth'
+gem 'rack-cors', :require => 'rack/cors'
