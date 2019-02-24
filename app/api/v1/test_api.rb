@@ -17,8 +17,9 @@ module V1
       end
 
       get "/private" do
-        authenticate_user!
-        { message: "hi"}
+        error!("Unauthorized", 401) unless authenticate_api_user
+
+        { message: "hi #{current_api_user.email}"}
       end
     end
   end
