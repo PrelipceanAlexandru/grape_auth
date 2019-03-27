@@ -5,6 +5,7 @@ module V1
     format :json
 
      mount ::V1::TestAPI
+     mount ::V1::BooksAPI
 
      add_swagger_documentation(
         api_version: "v1",
