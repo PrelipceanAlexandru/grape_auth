@@ -57,10 +57,11 @@ module V1
         { success: 200 } 
       end
 
-      get "/private" do
+      get "/private/last" do
         error!("Unauthorized", 401) unless authenticate_api_user
 
-        { message: "hi #{current_api_user.email}"}
+        
+        { last: { book: Book.last, current_user: current_api_user.name } }
       end
     end
   end
